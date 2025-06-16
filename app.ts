@@ -10,3 +10,8 @@ let numbers: number[] = [1, 2, 3, 4, 5, 7];
 let cities: Array<string> = ["Kabul", "Ghazni", "Herat"];
 
 let person: [string, number] = ["Ali", 30];
+let person1: { name: string; age: number; gender: string } = {
+  name: "Mohammad Ashraf Omid",
+  age: 29,
+  gender: "Male",
+};
