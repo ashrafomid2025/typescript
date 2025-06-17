@@ -12,3 +12,19 @@ var person1 = {
     age: 29,
     gender: "Male",
 };
+var Direction;
+(function (Direction) {
+    Direction[Direction["up"] = 0] = "up";
+    Direction[Direction["down"] = 1] = "down";
+    Direction[Direction["left"] = 2] = "left";
+    Direction[Direction["right"] = 3] = "right";
+})(Direction || (Direction = {}));
+var up = Direction.up;
+console.log(up);
+var status1;
+(function (status1) {
+    status1[status1["active"] = 1] = "active";
+    status1[status1["reactive"] = -1] = "reactive";
+    status1[status1["pending"] = 0] = "pending";
+})(status1 || (status1 = {}));
+console.log(status1.reactive);

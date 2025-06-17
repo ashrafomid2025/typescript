@@ -21,4 +21,11 @@ enum Direction {
   left,
   right,
 }
-let top: Direction = Direction.up;
+let up: Direction = Direction.up;
+console.log(up);
+enum status1 {
+  active = 1,
+  reactive = -1,
+  pending = 0,
+}
+console.log(status1.reactive);
