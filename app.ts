@@ -15,3 +15,10 @@ let person1: { name: string; age: number; gender: string } = {
   age: 29,
   gender: "Male",
 };
+enum Direction {
+  up,
+  down,
+  left,
+  right,
+}
+let top: Direction = Direction.up;
