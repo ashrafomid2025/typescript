@@ -28,3 +28,6 @@ var status1;
     status1[status1["pending"] = 0] = "pending";
 })(status1 || (status1 = {}));
 console.log(status1.reactive);
+var list = { name: "Ali", FatherName: "Jalil" };
+var list1 = [1, 2, 3, 4, 5, 5, 6];
+console.log(list1);

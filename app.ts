@@ -30,3 +30,5 @@ enum status1 {
 }
 console.log(status1.reactive);
 const list: any = { name: "Ali", FatherName: "Jalil" };
+const list1: Array<number> = [1, 2, 3, 4, 5, 5, 6];
+console.log(list1);
