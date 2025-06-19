@@ -29,3 +29,4 @@ enum status1 {
   pending = 0,
 }
 console.log(status1.reactive);
+const list: any = { name: "Ali", FatherName: "Jalil" };
