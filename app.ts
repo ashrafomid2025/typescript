@@ -32,3 +32,17 @@ console.log(status1.reactive);
 const list: any = { name: "Ali", FatherName: "Jalil" };
 const list1: Array<number> = [1, 2, 3, 4, 5, 5, 6];
 console.log(list1);
+
+enum Color {
+  Red = "Red",
+  Green = "Green",
+  Purple = "Purple",
+}
+
+let favColor: Color = Color.Purple;
+console.log(favColor);
+
+function Hello(name: string): string {
+  return `Hello how are you ${name}`;
+}
+console.log(Hello("Mohammad Ashraf Omid"));
