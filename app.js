@@ -44,3 +44,15 @@ function Hello(name) {
     return `Hello how are you ${name}`;
 }
 console.log(Hello("Mohammad Ashraf Omid"));
+function Message(message) {
+    console.log(message);
+}
+Message("This is a message from there");
+function Person(name, age) {
+    let ageCondition = age
+        ? "I am " + age + " years old"
+        : " I don't like to share my age with you";
+    let entireMessage = "Hi this is " + name + ageCondition;
+    return entireMessage;
+}
+console.log(Person("Hello"));
