@@ -21,4 +21,4 @@ function Greet(name: string): void {
   console.log("سلام علیکم و رحمت الله" + name);
 }
 
-Greet("Farida");
+Greet("اسماعیل");
