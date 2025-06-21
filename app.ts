@@ -1,61 +1,24 @@
-// const message: string = "Hi typescript course";
-// console.log(message);
-
-let myName: string = "Mohammad Ashraf Omid";
-let age: number = 29;
-let isProgrammer = true;
-
-let city: string = "Ghazni";
-let numbers: number[] = [1, 2, 3, 4, 5, 7];
-let cities: Array<string> = ["Kabul", "Ghazni", "Herat"];
-
-let person: [string, number] = ["Ali", 30];
-let person1: { name: string; age: number; gender: string } = {
-  name: "Mohammad Ashraf Omid",
-  age: 29,
-  gender: "Male",
+let cities: string[] = ["Kabul", "Ghazni", "Herat"];
+const list: Array<number> = [1, 2, 3, 4, 5];
+const person: { id: number; name: string; age: number } = {
+  id: 1,
+  name: "Omid",
+  age: 12,
 };
-enum Direction {
-  up,
-  down,
-  left,
-  right,
-}
-let up: Direction = Direction.up;
-console.log(up);
-enum status1 {
-  active = 1,
-  reactive = -1,
-  pending = 0,
-}
-console.log(status1.reactive);
-const list: any = { name: "Ali", FatherName: "Jalil" };
-const list1: Array<number> = [1, 2, 3, 4, 5, 5, 6];
-console.log(list1);
-
-enum Color {
-  Red = "Red",
-  Green = "Green",
-  Purple = "Purple",
-}
-
-let favColor: Color = Color.Purple;
-console.log(favColor);
-
+// any
+let listOfStudents: any[] = [1, "Ali", "Fatima", 34];
+// function => code on demand void
 function Hello(name: string): string {
-  return `Hello how are you ${name}`;
+  return "Hello dear" + name;
 }
-console.log(Hello("Mohammad Ashraf Omid"));
+function Add(number1: number, number2: number): number {
+  return number1 + number2;
+}
 
-function Message(message: string): void {
-  console.log(message);
+const result = Add(2, 10);
+
+function Greet(name: string): void {
+  console.log("سلام علیکم و رحمت الله" + name);
 }
-Message("This is a message from there");
-function Person(name: string, age?: number): string {
-  let ageCondition = age
-    ? "I am " + age + " years old"
-    : " I don't like to share my age with you";
-  let entireMessage = "Hi this is " + name + ageCondition;
-  return entireMessage;
-}
-console.log(Person("Hello"));
+
+Greet("Farida");
