@@ -1,22 +1,12 @@
 "use strict";
-let cities = ["Kabul", "Ghazni", "Herat"];
-const list = [1, 2, 3, 4, 5];
-const person = {
-    id: 1,
-    name: "Omid",
-    age: 12,
-};
-// any
-let listOfStudents = [1, "Ali", "Fatima", 34];
-// function => code on demand void
-function Hello(name) {
-    return "Hello dear" + name;
+// data type ts
+// number, string, array, boolean, object, any
+// function  code on demand
+// optional parameter
+function Greet(name, age) {
+    //
+    const result = age ? " I am " + age + " years old" : "";
+    console.log("Hi there I am " + name + result);
+    // console.log("Hi there I am " + name + " and I am " + age + " years old");
 }
-function Add(number1, number2) {
-    return number1 + number2;
-}
-const result = Add(2, 10);
-function Greet(name) {
-    console.log("سلام علیکم و رحمت الله" + name);
-}
-Greet("Farida");
+Greet("Omid");
