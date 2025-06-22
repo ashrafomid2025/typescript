@@ -11,3 +11,4 @@ function Greet(name: string, age?: number): void {
   // console.log("Hi there I am " + name + " and I am " + age + " years old");
 }
 Greet("Omid");
+Greet("Ashraf Omid", 56);
