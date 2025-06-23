@@ -16,4 +16,3 @@ function Jam(...a: number[]): void {
 
 Jam(6, 5, 10, 11, 23, 90);
 Jam(3, 4);
-Jam(5, 4, 2, 3, 7);
