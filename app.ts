@@ -1,25 +1,44 @@
 // enum and tuple
 // default argument, rested parameter
-enum Grade {
-  fail = "fail",
-  pass = "pass",
+// enum Grade {
+//   fail = "fail",
+//   pass = "pass",
+// }
+// enum condition {
+//   loggedIn = "Log in",
+//   loggedOut = "log out",
+//   Active = "online",
+// }
+// // group , constant
+// // array ,
+// let listOfStudent: number[] = [1, 2, 3, 6];
+// let list: [number, string, number, boolean] = [1, "Ali", 23, true];
+// let Sinf: [number, string, number, number, string, number] = [
+//   1,
+//   "Ali",
+//   45,
+//   3,
+//   "",
+//   34,
+// ];
+
+// console.log(Sinf[4]);
+
+// data type enum, tuple
+enum Colors {
+  Red,
+  Green,
+  Purple,
+  Black,
 }
-enum condition {
-  loggedIn = "Log in",
-  loggedOut = "log out",
-  Active = "online",
-}
-// group , constant
-// array ,
-let listOfStudent: number[] = [1, 2, 3, 6];
-let list: [number, string, number, boolean] = [1, "Ali", 23, true];
-let Sinf: [number, string, number, number, string, number] = [
+let listOfStudents: string[] = ["Ali", "Ahamd", "Taqi"];
+// size 3, element: data type
+let listOFSt: [number, string, boolean, number, string, boolean] = [
   1,
   "Ali",
-  45,
-  3,
-  "Hanif",
-  34,
+  true,
+  2,
+  "Taqi",
+  false,
 ];
-
-console.log(Sinf[4]);
+console.log(listOFSt[4]);
