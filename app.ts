@@ -1,18 +1,25 @@
-function Salaam(
-  name: string,
-  message: string = "لطفا درس های تان بخوانید"
-): void {
-  console.log("HI there", name + " " + message);
+// enum and tuple
+// default argument, rested parameter
+enum Grade {
+  fail = "fail",
+  pass = "pass",
 }
-Salaam("Omid");
-// ... never, default argument, rested parameter
-function Jam(...a: number[]): void {
-  let natija = 0;
-  for (let num of a) {
-    natija += num;
-  }
-  console.log(natija);
+enum condition {
+  loggedIn = "Log in",
+  loggedOut = "log out",
+  Active = "online",
 }
+// group , constant
+// array ,
+let listOfStudent: number[] = [1, 2, 3, 6];
+let list: [number, string, number, boolean] = [1, "Ali", 23, true];
+let Sinf: [number, string, number, number, string, number] = [
+  1,
+  "Ali",
+  45,
+  3,
+  "Hanif",
+  34,
+];
 
-Jam(6, 5, 10, 11, 23, 90);
-Jam(3, 4);
+console.log(Sinf[4]);

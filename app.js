@@ -1,16 +1,27 @@
 "use strict";
-function Salaam(name, message = "لطفا درس های تان بخوانید") {
-    console.log("HI there", name + " " + message);
-}
-Salaam("Omid");
-// ... never, default argument, rested parameter
-function Jam(...a) {
-    let natija = 0;
-    for (let num of a) {
-        natija += num;
-    }
-    console.log(natija);
-}
-Jam(6, 5, 10, 11, 23, 90);
-Jam(3, 4);
-Jam(5, 4, 2, 3, 7);
+// enum and tuple
+// default argument, rested parameter
+var Grade;
+(function (Grade) {
+    Grade["fail"] = "fail";
+    Grade["pass"] = "pass";
+})(Grade || (Grade = {}));
+var condition;
+(function (condition) {
+    condition["loggedIn"] = "Log in";
+    condition["loggedOut"] = "log out";
+    condition["Active"] = "online";
+})(condition || (condition = {}));
+// group , constant
+// array ,
+let listOfStudent = [1, 2, 3, 6];
+let list = [1, "Ali", 23, true];
+let Sinf = [
+    1,
+    "Ali",
+    45,
+    3,
+    "Hanif",
+    34,
+];
+console.log(Sinf[4]);
