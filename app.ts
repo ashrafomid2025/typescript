@@ -42,3 +42,4 @@ let listOFSt: [number, string, boolean, number, string, boolean] = [
   false,
 ];
 console.log(listOFSt[4]);
+// tuples are array like structured but there is something different fixed sized, data type for each element
