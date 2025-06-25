@@ -41,5 +41,10 @@ let listOFSt: [number, string, boolean, number, string, boolean] = [
   "Taqi",
   false,
 ];
+enum Color {
+  red,
+  purple,
+  green,
+}
 console.log(listOFSt[4]);
 // tuples are array like structured but there is something different fixed sized, data type for each element
