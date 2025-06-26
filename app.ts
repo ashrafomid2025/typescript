@@ -49,6 +49,13 @@ enum Color {
 console.log(listOFSt[4]);
 // tuples are array like structured but there is something different fixed sized, data type for each element
 function combine(a: number, b: number): number;
-function combine(a: string, b: string): string {
-  return a + b;
+function combine(a: string, b: string): string;
+function combine(a: number | string, b: number | string): number | string {
+  if (typeof a === "number" && typeof b === "number") {
+    return a + b;
+  }
+  if (typeof a === "string" && typeof b === "string") {
+    return a + b;
+  }
+  throw new Error("Invalid argument");
 }
