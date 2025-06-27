@@ -1,4 +1,3 @@
-"use strict";
 // enum and tuple
 // default argument, rested parameter
 // enum Grade {
@@ -31,9 +30,9 @@ var Colors;
     Colors[Colors["Purple"] = 2] = "Purple";
     Colors[Colors["Black"] = 3] = "Black";
 })(Colors || (Colors = {}));
-let listOfStudents = ["Ali", "Ahamd", "Taqi"];
+var listOfStudents = ["Ali", "Ahamd", "Taqi"];
 // size 3, element: data type
-let listOFSt = [
+var listOFSt = [
     1,
     "Ali",
     true,
@@ -41,4 +40,19 @@ let listOFSt = [
     "Taqi",
     false,
 ];
+var Color;
+(function (Color) {
+    Color[Color["red"] = 0] = "red";
+    Color[Color["purple"] = 1] = "purple";
+    Color[Color["green"] = 2] = "green";
+})(Color || (Color = {}));
 console.log(listOFSt[4]);
+function combine(a, b) {
+    if (typeof a === "number" && typeof b === "number") {
+        return a + b;
+    }
+    if (typeof a === "string" && typeof b === "string") {
+        return a + b;
+    }
+    throw new Error("Invalid argument");
+}
