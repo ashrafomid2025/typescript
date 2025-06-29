@@ -59,3 +59,8 @@ function combine(a: number | string, b: number | string): number | string {
   }
   throw new Error("Invalid argument");
 }
+function add(a: number, b: number): string;
+function add(a: string, b: string): string;
+function add(a: string | number, b: number | string): number | string {
+  return a + b;
+}
