@@ -62,5 +62,11 @@ function combine(a: number | string, b: number | string): number | string {
 function add(a: number, b: number): string;
 function add(a: string, b: string): string;
 function add(a: string | number, b: number | string): number | string {
-  return a + b;
+  if (typeof a === "number" && typeof b === "number") {
+    return a + b;
+  }
+  if (typeof a === "string" && typeof b === "string") {
+    return a + b;
+  }
+  throw new Error("Invalid argument");
 }
